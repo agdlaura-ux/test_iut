@@ -8,3 +8,16 @@ ce que le projet va permettre :
 * les stocker en BDD
 * les afficher
 * utiliser Node-RED
+
+
+
+Commandes : 
+
+git clone \[code du dossier github]
+
+
+
+!\[Robot](Robot.jpg)
+
+
+
