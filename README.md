@@ -2,7 +2,7 @@
 
 Projet test pour montrer l'utilisation
 
-ce que le projet va permettre :
+Ce que le projet va permettre :
 
 * récupérer les messages
 * les stocker en BDD
@@ -16,10 +16,18 @@ Commandes :
 - cd [nom du projet (test_iut)]
 - git add [nom du fichier (README.md)]
 - git commit -m "Modification du README"
-- git push origin main
+- git push origin main (pour envoyer du local ver GitHub)
+- git pull origin main (pour envoyer de GitHub vers le local)
 
 Ajouter une image :
 ![Robot](Robot.jpg)
+
+```mermaid
+flowchart TD
+    mosquitto[serveur<br>Mosquitto] --> |message| RPi[Raspberry Pi<br>Node-RED<br>Documentation]
+    RPi --> BDD
+    RPi <--> GitHub
+```
 
 
 
