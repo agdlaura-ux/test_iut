@@ -39,3 +39,7 @@ flowchart TD
 ```
 
 
+=================================================
+Modifications de E.G
+
+![Robot](robot.png)
