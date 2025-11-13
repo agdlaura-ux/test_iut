@@ -13,11 +13,11 @@ ce que le projet va permettre :
 
 Commandes : 
 
-git clone \[code du dossier github]
+git clone [code du dossier github]
 
 
 
-!\[Robot](Robot.jpg)
+![Robot](Robot.jpg)
 
 
 
