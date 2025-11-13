@@ -20,6 +20,7 @@ Commandes :
 - git checkout -b [nom de la branche qu'on veut créer]
 - git push origin [nom de la branche]
 - git checkout [nom de la branche où on veut aller]
+- git switch [nom de la branche où on veut aller]
 
 Ajouter une image :
 ![Robot](Robot.jpg)
