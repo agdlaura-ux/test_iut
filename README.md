@@ -17,6 +17,7 @@ Commandes :
 - git commit -m "Modification du README"
 - git push origin main (pour envoyer du local ver GitHub)
 - git pull origin main (pour envoyer de GitHub vers le local)
+- git checkout -b [nom de la branche]
 
 Ajouter une image :
 ![Robot](Robot.jpg)
