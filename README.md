@@ -12,7 +12,6 @@ Ce que le projet va permettre :
 
 
 Commandes : 
-- git clone [code du dossier GitHub (http://...)]
 - cd [nom du projet (test_iut)]
 - git add [nom du fichier (README.md)]
 - git commit -m "Modification du README"
@@ -29,5 +28,14 @@ flowchart TD
     RPi <--> GitHub
 ```
 
+```mermaid
+flowchart TD
+    github --> |git clone 'URL'| local
+    local --> |git push origin main| github
+    github --> |git pull origin main|local
+    local --> |edition/creation<br> fichiers| local
+    local --> |git add 'nom du fichier'| index
+    index --> |git commit -m ...|local
+```
 
 
