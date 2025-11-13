@@ -17,6 +17,9 @@ Commandes :
 - git commit -m "Modification du README"
 - git push origin main (pour envoyer du local ver GitHub)
 - git pull origin main (pour envoyer de GitHub vers le local)
+- git checkout -b [nom de la branche qu'on veut créer]
+- git push origin [nom de la branche]
+- git checkout [nom de la branche où on veut aller]
 
 Ajouter une image :
 ![Robot](Robot.jpg)
