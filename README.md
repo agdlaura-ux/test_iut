@@ -12,11 +12,13 @@ ce que le projet va permettre :
 
 
 Commandes : 
+- git clone [code du dossier GitHub (http://...)]
+- cd [nom du projet (test_iut)]
+- git add [nom du fichier (README.md)]
+- git commit -m "Modification du README"
+- git push origin main
 
-git clone [code du dossier github]
-
-
-
+Ajouter une image :
 ![Robot](Robot.jpg)
 
 
