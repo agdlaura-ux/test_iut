@@ -47,3 +47,76 @@ flowchart TD
 Modifications de E.G
 
 ![Robot](robot.png)
+
+
+==================================================
+
+CREATE TABLE Étudiants (
+	Id INTEGER NOT NULL,
+	Nom TEXT(50),
+	Prénom TEXT,
+	Naissance TEXT(10),
+	Email TEXT(100),
+	CONSTRAINT Étudiants_PK PRIMARY KEY (Id)
+);
+
+
+
+
+--Afficher toutes les lignes de la table Étudiants
+SELECT é.* FROM Étudiants AS é;
+
+--Insertion d'une ligne dans la table
+INSERT INTO Étudiants  (Id, Nom, Prénom, Naissance, Email)
+VALUES(15, 'name', 'surname', '2000-01-15', 'ijffergfezghthgretr@free.fr');
+INSERT INTO Étudiants  (Id, Nom, Prénom, Naissance, Email)
+VALUES(16, 'Gil', 'LOPING', '2001-11-17', 'ijtyjtr@free.fr');
+INSERT INTO Étudiants  (Id, Nom, Prénom, Naissance, Email)
+VALUES(27, 'Milo', 'PARELO', '2002-03-24', 'sdfghthgretr@free.fr');
+
+--Maj de l'email de l'étudiant dont l'id =20
+UPDATE Étudiants
+SET email = 'pierre.xxx@free.fr'
+WHERE Id=20;
+
+SELECT * FROM Étudiants
+where naissance is null;
+
+DELETE * FROM Étudiants
+where naissance is null;
+
+
+
+
+-- etudiants2 definition
+
+CREATE TABLE etudiants2 (
+	nom TEXT,
+	prenom TEXT,
+	age INTEGER,
+	email TEXT,
+	ville TEXT
+);
+
+
+
+
+
+SELECT e.*,e.rowid FROM etudiants2 AS e;
+
+--Afficher les etudiants de plus de 18 ans 
+SELECT nom, prenom, age FROM etudiants2 e 
+WHERE age>18
+ORDER BY nom;
+
+
+
+--Afficher les etudiants entre 20 et 25 ans 
+SELECT nom, prenom, age FROM etudiants2 e 
+WHERE age between 20 and 25
+ORDER BY nom;
+
+--Afficher l'étudiant de Paris
+SELECT nom, prenom, ville FROM etudiants2 e 
+Where ville=='Paris';
+
