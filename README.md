@@ -50,7 +50,7 @@ Modifications de E.G
 
 
 ==================================================
-
+```sql
 CREATE TABLE Étudiants (
 	Id INTEGER NOT NULL,
 	Nom TEXT(50),
@@ -119,4 +119,4 @@ ORDER BY nom;
 --Afficher l'étudiant de Paris
 SELECT nom, prenom, ville FROM etudiants2 e 
 Where ville=='Paris';
-
+```
